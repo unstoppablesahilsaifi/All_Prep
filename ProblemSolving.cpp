@@ -23,7 +23,7 @@ for(long i=0;i<=n;i++){
 return count;
 
 }
-1
+1e
 2
    3
 4e
