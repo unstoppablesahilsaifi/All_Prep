@@ -27,7 +27,7 @@ return count;
 2
    3
 4e
-l
+lg
 j
 6
 8e
