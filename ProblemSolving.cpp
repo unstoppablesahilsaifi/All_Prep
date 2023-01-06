@@ -23,10 +23,4 @@ for(long i=0;i<=n;i++){
 return count;
 
 }
-m1e
-2
-   3r
 
-8err
-79r
-h
