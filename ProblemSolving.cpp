@@ -23,10 +23,3 @@ for(long i=0;i<=n;i++){
 return count;
 
 }
-h
-test 1
-test 2
-test 3
-   test 4
-hn
-j
