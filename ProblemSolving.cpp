@@ -58,3 +58,41 @@ return count;
 //     }
 //     return 0;
 // }
+   
+   
+   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   
+   #include<iostream>
+using namespace std;
+
+int main()
+{
+    
+    int a=4;
+    int b=6;
+    cout<<"a&b= "<<(a&b)<<endl;
+    cout<<"a | b= "<<(a | b)<<endl;
+    cout<<"~a= "<<(~a)<<endl;
+    cout<<"a^b ="<<(a ^ b)<<endl;
+    cout<<(17>>1)<<endl;
+    cout<<(17>>2)<<endl;
+    cout<<(19<<1)<<endl;
+    cout<<(21<<2)<<endl;
+
+}
+
+OP- 4
+    6
+   -5// We get -5 coz 4 is 1 0 0 is binary when we make it Not it will be 1111....011 but 1 means last bit defines number became negative to hmne kya padha tha ki
+   bhai negative number ko print krne k liye 2' s comliment krte h
+   111....011 ka 1's hua 000...100 2's krne k liye +1 krdo which means
+   
+       111....011
+   1's 000....100
+       ----------
+   2's         +1
+       -----------
+       000....101 which means 5 sign negative hi rhega
+   
+   
+  
