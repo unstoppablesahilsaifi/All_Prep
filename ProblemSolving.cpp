@@ -98,4 +98,4 @@ int main()
     return 0;
 }
 OP- 10001
-
+// https://www.geeksforgeeks.org/program-decimal-binary-conversion/
