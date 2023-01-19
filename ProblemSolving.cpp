@@ -83,8 +83,9 @@ void decToBinary(int n)
         n = n / 2;
         i++;
     }
- 
-    // printing binary array in reverse order
+     
+    // printing binary array in reverse order, Kyuki convert krte time revresed ho jata h jaise agar 25 ko krenge to convert krke 10011 aayga jabki shi h 11001
+    // isliye reverse krna pdta h
     for (int j = i - 1; j >= 0; j--)
         cout << binaryNum[j];
 }
