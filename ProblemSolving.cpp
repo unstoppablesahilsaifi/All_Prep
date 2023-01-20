@@ -1,5 +1,5 @@
 // Bit Manipulation
-...
+....
 
 //SUM vs XOr
 long sumXor(long n) {
