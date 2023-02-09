@@ -26,115 +26,42 @@ return count;
 
 
 +++++++++++++++++++++++++++++++++++++++++++++++++=
+Given an array Arr of N positive integers. Your task is to find the elements whose value is equal to that of its index value ( Consider 1-based indexing ).
 
+Note: There can be more than one element in the array which have the same value as its index. You need to include every such element's index. Follows 1-based indexing of the array.
 
+Example 1:
 
-// int main()
-// {
-//     /*
-//     for n=4;
+Input:
+N = 5
+Arr[] = {15, 2, 45, 12, 7}
+Output: 2
+Explanation: Only Arr[2] = 2 exists here.
+Example 2:
 
-//       1
-//       2 3
-//       3 4 5
-//       4 5 6 7
-//     */
+Input: 
+N = 1
+Arr[] = {1}
+Output: 1
+Explanation: Here Arr[1] = 1 exists.
+Your Task:  
+You don't need to read input or print anything. Your task is to complete the function valueEqualToIndex() which takes the array of integers arr[] and n as parameters and returns an array of indices where the given conditions are satisfied. When there is no such element exists then return an empty array of length 0.
 
-//     int n;
-//     cin >> n;
-//     int i = 1;
-//     while (i <= n)
-//     {
-//         int j = 1;
-//         int value=i;
-//         while (j <= i)
-//         {
-//             cout <<value<< " ";
-//             value++;
-//             j++;
-//         }
-//         cout << endl;
-//         i++;
-//     }
-//     return 0;
-// }
+Expected Time Complexity: O(N)
+Expected Auxiliary Space: O(1)
    
-   
-   ++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   
-// C++ program to convert a decimal
-// number to binary number
- 
-#include <iostream>
-using namespace std;
- 
-// function to convert decimal to binary
-void decToBinary(int n)
-{
-    // array to store binary number
-    int binaryNum[32];
- 
-    // counter for binary array
-    int i = 0;
-    while (n > 0) {
- 
-        // storing remainder in binary array
-        binaryNum[i] = n % 2;
-        n = n / 2;
-        i++;
-    }
-     
-    // printing binary array in reverse order, Kyuki convert krte time revresed ho jata h jaise agar 25 ko krenge to convert krke 10011 aayga jabki shi h 11001
-    // isliye reverse krna pdta h
-    for (int j = i - 1; j >= 0; j--)
-        cout << binaryNum[j];
-}
- 
-// Driver program to test above function
-int main()
-{
-    int n = 17;
-    decToBinary(n);
-    return 0;
-}
-OP- 10001
-// https://www.geeksforgeeks.org/program-decimal-binary-conversion/
+   class Solution{
+public:
 
-   
-   
-   // convert binary to decimal
-
-#include <stdio.h>
-#include <math.h>
-
-// function prototype
-int convert(long long);
-
-int main() {
-  long long n;
-  printf("Enter a binary number: ");
-  scanf("%lld", &n);
-  printf("%lld in binary = %d in decimal", n, convert(n));
-  return 0;
-}
-
-// function definition
-int convert(long long n) {
-  int dec = 0, i = 0, rem;
-
-  while (n!=0) {
-    rem = n % 10;
-    n /= 10;
-    dec += rem * pow(2, i);
-    ++i;
-  }
-
-  return dec;
-}
-
-
-
-Test 1
-Test 2
-Test 3
-Test 4
+	vector<int> valueEqualToIndex(int arr[], int n) {
+	    // code here
+	   vector<int>ans;
+	   for(int i=0; i<n;i++){
+	       if(arr[i]==i+1){
+	           ans.push_back(arr[i]);
+	       }
+	   }
+	   return ans;
+	   
+	}
+};
